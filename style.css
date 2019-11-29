@@ -1,0 +1,162 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  background: lavenderblush;
+}
+
+#main {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#img {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(87deg, blue, yellow);
+  z-index: -3;
+}
+
+#brand {
+  position: relative;
+  top: 0;
+  text-align: center;
+}
+
+#brand p {
+  font-size: 4rem;
+  color: #0af8e4;
+  font-family: serif;
+}
+
+#brand p::first-letter {
+  color: white;
+  padding-right: 2px;
+  font-family: cursive;
+  font-weight: bolder;
+}
+
+#name {
+  position: relative;
+  -webkit-animation-name: my;
+          animation-name: my;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes my {
+  0% {
+    top: -1000px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes my {
+  0% {
+    top: -1000px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+#menu {
+  text-align: center;
+  margin: 0 20px;
+  position: relative;
+  top: 70vh;
+}
+
+#menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  margin: 0px 20px;
+  border-radius: 35%;
+  border: 1px solid red;
+  background: gold;
+  padding: 10px;
+  -webkit-animation: myani;
+          animation: myani;
+}
+
+#menu a:first-child {
+  -webkit-animation: myanileft;
+          animation: myanileft;
+  position: relative;
+  left: -1000px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+#menu a:last-child {
+  -webkit-animation: myaniright;
+          animation: myaniright;
+  position: relative;
+  right: 1000px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+@-webkit-keyframes myanileft {
+  0% {
+    left: -800px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes myanileft {
+  0% {
+    left: -800px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes myaniright {
+  0% {
+    right: -800px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes myaniright {
+  0% {
+    right: -800px;
+  }
+  100% {
+    right: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

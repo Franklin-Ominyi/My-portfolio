@@ -140,7 +140,7 @@ body {
   border-radius: 0 0 40px  40px;
   margin-bottom: 100px;
   max-width: 200vw;
-  margin-top: 40px;
+  margin-top: 20px;
   background: #d1a7a7;
 }
 
@@ -284,6 +284,11 @@ body {
             transform-origin: right;
     -webkit-transform: translateX(-600px);
             transform: translateX(-600px);
+  }
+  #welcome #nav a {
+    font-size: 14px;
+    padding: 2px;
+    margin: 0 1px;
   }
 }
 /*# sourceMappingURL=port.css.map */
