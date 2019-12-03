@@ -72,6 +72,35 @@ const navStyleOnclick4 =()=>{
 }
 
 
+
+
+
+// image slider
+
+var i = 0
+var pix = [];
+var time = 3000;
+pix[0] = "maxresdefault.jpg";
+pix[1] = "apple-desk-imac-39284.jpg";
+pix[2] = "computer class.jpg";
+
+const imgSlider=()=>{
+document.querySelector("#sliders").src = pix[i];
+if(i<pix.length-1){
+ i++
+}else{
+ i = 0;
+}
+
+
+setTimeout("imgSlider()", time);
+}
+window.onload = imgSlider;
+
+
+
+
+
 // var nav = document.querySelector('#nav');
 // var header = document.querySelector("#header");
 // var menu = document.querySelector("#menu");
