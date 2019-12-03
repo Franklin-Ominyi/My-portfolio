@@ -189,6 +189,7 @@ body {
     padding: 5px;
     -webkit-animation: myani;
             animation: myani;
+    display: block;
   }
   #menu a:hover {
     color: black;
