@@ -222,7 +222,7 @@ body{
 
 
 //media queries
-@media screen and (max-width: 540px){
+@media screen and (max-width: 800px){
  #brand img{
   display: none;
  }
@@ -284,10 +284,12 @@ body{
    }
   }
 
+
+
   #nav a{
    font-size: 14px;
    padding: 2px;
-   margin: 0 1px;
+   margin: 0 6px;
   }
  }
 
