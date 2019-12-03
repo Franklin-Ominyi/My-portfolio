@@ -287,6 +287,12 @@ body {
     -webkit-transform: translateX(-600px);
             transform: translateX(-600px);
   }
+  #welcome #toggle {
+    font-size: 14px;
+    margin: 0;
+    padding: 1.3px;
+    margin-right: 2px;
+  }
   #welcome #nav a {
     font-size: 14px;
     padding: 2px;
