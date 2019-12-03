@@ -273,7 +273,7 @@ body {
     color: pink;
   }
   #welcome img {
-    margin-left: 38vw;
+    margin-left: 36vw;
     max-height: 100px;
     min-width: 100px;
     -webkit-transition: -webkit-transform 2s ease-in;
@@ -296,10 +296,19 @@ body {
   #welcome #nav a {
     font-size: 14px;
     padding: 2px;
-    margin: 0 6px;
+    margin: 0 10px;
+    display: block;
   }
   #slideMenu {
     display: none;
+  }
+  #welcome h5 {
+    -webkit-transition: all ease-in 2s;
+    transition: all ease-in 2s;
+  }
+  #welcome h5:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 /*# sourceMappingURL=port.css.map */
