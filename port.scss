@@ -273,7 +273,7 @@ body{
  
   img{
    // float: right;
-   margin-left: 36vw; 
+   margin-left: 33vw; 
    max-height: 100px;
    min-width: 100px;
    transition: transform 2s ease-in;
@@ -296,6 +296,9 @@ body{
    font-size: 14px;
    padding: 2px;
    margin: 0 10px;
+   display: block;
+  }
+  #nav{
    display: block;
   }
  }
