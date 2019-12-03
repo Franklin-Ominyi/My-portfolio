@@ -159,4 +159,54 @@ body {
     right: 0;
   }
 }
+
+@media (max-width: 800px) {
+  #brand p {
+    font-size: 2rem;
+    color: #0af8e4;
+    font-family: serif;
+  }
+  #brand p::first-letter {
+    color: white;
+    padding-right: 2px;
+    font-family: cursive;
+    font-weight: bolder;
+  }
+  #menu {
+    text-align: center;
+    margin: 0 20px;
+    position: relative;
+    top: 70vh;
+  }
+  #menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin: 0px 20px;
+    border-radius: 15%;
+    border: 1px solid gray;
+    background: black;
+    padding: 5px;
+    -webkit-animation: myani;
+            animation: myani;
+  }
+  #menu a:hover {
+    color: black;
+    background: white;
+  }
+  #menu a:first-child {
+    -webkit-animation: myanileft;
+            animation: myanileft;
+    position: relative;
+    left: -1000px;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+}
 /*# sourceMappingURL=style.css.map */
