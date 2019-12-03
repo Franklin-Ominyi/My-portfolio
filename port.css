@@ -148,7 +148,7 @@ body {
 
 #main .article p {
   color: black;
-  text-align: start;
+  text-align: justify;
   font-size: 20px;
   line-height: 30px;
   letter-spacing: 1.5px;
