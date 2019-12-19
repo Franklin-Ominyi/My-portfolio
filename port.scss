@@ -114,14 +114,23 @@ body{
 }
 
 
-
+@media(min-width: 780px){
+   #main{
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   }
+   .article{
+      width: 32%;
+   }
+}
 #content{
  position: relative;
  top: 100vh;
 }
 #main{
  background: rgba(22,22,122,0.3);
-
+ 
  .article{
   border: 2px white solid;
   border-radius: 0 0 40px  40px;
@@ -204,7 +213,17 @@ body{
   }
  }
 }
-
+#flexitem4 a{
+   display: block;
+   text-decoration: none;
+   color: black;
+   padding: 5px;
+   text-align: center;
+   font-size: 20px;
+   &:hover{
+      color: green;
+   }
+}
 #main2{
  background: rgba(23,21,222,0.9);
  text-align: center;
