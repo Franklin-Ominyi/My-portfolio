@@ -56,6 +56,47 @@ body {
           animation-timing-function: ease-out;
 }
 
+#links a {
+  border: 1px solid yellow;
+  display: inline;
+  background-color: gold;
+  padding: 8px;
+  position: relative;
+  top: 80vh;
+  font-size: 35px;
+  text-decoration: none;
+  margin: 10px 30px;
+  border-radius: 10%;
+}
+
+#links a:hover {
+  color: white;
+}
+
+#links a:first-child {
+  left: -2000px;
+  -webkit-animation: myanileft;
+          animation: myanileft;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+#links a:last-child {
+  right: 2000px;
+  -webkit-animation: myaniright;
+          animation: myaniright;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
 @-webkit-keyframes my {
   0% {
     top: -1000px;
@@ -217,9 +258,9 @@ body {
   }
   #menu {
     text-align: center;
-    margin: 0 20px;
+    margin: 10px 20px;
     position: relative;
-    top: 70vh;
+    top: 50vh;
   }
   #menu a {
     text-decoration: none;
@@ -227,16 +268,11 @@ body {
     font-size: 20px;
     margin: 5px 20px;
     border-radius: 15%;
-    border: 1px solid gray;
-    background: black;
-    padding: 5px;
+    background: none;
+    padding: 1px;
     -webkit-animation: myani;
             animation: myani;
     display: block;
-  }
-  #menu a:hover {
-    color: black;
-    background: white;
   }
   #menu a:first-child {
     -webkit-animation: myanileft;
@@ -251,6 +287,43 @@ body {
             animation-fill-mode: forwards;
     -webkit-animation-duration: 2s;
             animation-duration: 2s;
+  }
+  #links a {
+    border: 1px solid yellow;
+    display: inline;
+    background-color: gold;
+    padding: 4px;
+    position: relative;
+    top: 80vh;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 5px 20px;
+    border-radius: 10%;
+  }
+  #links a:hover {
+    color: white;
+  }
+  #links a:first-child {
+    left: -2000px;
+    -webkit-animation: myanileft;
+            animation: myanileft;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  #links a:last-child {
+    right: 2000px;
+    -webkit-animation: myaniright;
+            animation: myaniright;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
   }
 }
 /*# sourceMappingURL=style.css.map */

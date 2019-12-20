@@ -51,6 +51,40 @@ body{
  animation-timing-function: ease-out;
 }
 
+//links for index.html
+#links a{
+  border: 1px solid yellow;
+  display: inline;
+  background-color: gold;
+  padding: 8px;
+  position: relative;
+  top: 80vh;
+  font-size: 35px;
+  text-decoration: none;
+  margin: 10px 30px;
+  border-radius: 10%;
+
+  &:hover{
+    color: white;
+  }
+
+  &:first-child{
+    left: -2000px;
+    animation: myanileft;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-delay: 3s;
+  }
+
+  &:last-child{
+    right: 2000px;
+    animation: myaniright;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    
+  }
+}
 @keyframes my{
  0% {top: -1000px;};
  100% {top: 0;};
@@ -155,9 +189,9 @@ body{
  
  #menu{
   text-align: center;
-  margin: 0 20px;
+  margin: 10px 20px;
   position: relative;
-  top: 70vh;
+  top: 50vh;
  
   a{
    text-decoration: none;
@@ -165,15 +199,14 @@ body{
    font-size: 20px;
    margin: 5px 20px;
    border-radius: 15%;
-   border: 1px solid gray;
-   background:black; 
-   padding: 5px;
+   background: none; 
+   padding: 1px;
    animation: myani;
    display: block;
 
    &:hover{
-    color: black;
-    background: white;
+    // color: black;
+    // background: white;
    }
   }
 
@@ -187,4 +220,42 @@ body{
    animation-duration: 2s;
   }
  }
+
+
+
+ //media query for index.html 
+ #links a{
+  border: 1px solid yellow;
+  display: inline;
+  background-color: gold;
+  padding: 4px;
+  position: relative;
+  top: 80vh;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 5px 20px;
+  border-radius: 10%;
+
+  &:hover{
+    color: white;
+  }
+
+  &:first-child{
+    left: -2000px;
+    animation: myanileft;
+    animation-fill-mode: forwards;
+    animation-duration: 3s;
+    animation-delay: 3s;
+  }
+
+  &:last-child{
+    right: 2000px;
+    animation: myaniright;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    
+  }
+}
+
 }
