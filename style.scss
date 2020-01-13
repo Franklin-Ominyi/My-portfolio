@@ -103,12 +103,13 @@ body{
   display: block;
   font-size: 40px;
   margin: 0px 20px;
-//   border-radius: 35%;
-//   border: 1px solid red;
-//   background: gold; 
+  //   border-radius: 35%;
+  //   border: 1px solid red;
+  //   background: gold; 
   padding: 10px;
   animation: myani;
  }
+
  a:first-child{ 
   animation: myanileft;
   position: relative;
@@ -204,10 +205,10 @@ body{
    animation: myani;
    display: block;
 
-   &:hover{
-    // color: black;
-    // background: white;
-   }
+  //  &:hover{
+  //   // color: black;
+  //   // background: white;
+  //  }
   }
 
   a:first-child{ 
@@ -224,38 +225,128 @@ body{
 
 
  //media query for index.html 
- #links a{
-  border: 1px solid yellow;
-  display: inline;
-  background-color: gold;
-  padding: 4px;
-  position: relative;
-  top: 80vh;
-  font-size: 20px;
-  text-decoration: none;
-  margin: 5px 20px;
-  border-radius: 10%;
+  #links a{
+    border: 1px solid yellow;
+    display: inline;
+    background-color: gold;
+    padding: 4px;
+    position: relative;
+    top: 80vh;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 5px 20px;
+    border-radius: 10%;
 
-  &:hover{
+    &:hover{
+      color: white;
+    }
+
+    &:first-child{
+      left: -2000px;
+      animation: myanileft;
+      animation-fill-mode: forwards;
+      animation-duration: 3s;
+      animation-delay: 3s;
+    }
+
+      &:last-child{
+      right: 2000px;
+      animation: myaniright;
+      animation-fill-mode: forwards;
+      animation-delay: 3s;
+      animation-duration: 3s;
+      
+    }
+  }
+}
+
+
+@media(max-width: 300px){
+  #brand p{
+   font-size: 1.5rem ;
+   color: rgb(10, 248, 228);
+   font-family: serif;
+   &::first-letter{
     color: white;
+    padding-right: 2px;
+    font-family: cursive;
+    font-weight: bolder;
+   }
+     
   }
-
-  &:first-child{
-    left: -2000px;
+  
+  
+  #menu{
+   text-align: center;
+   margin: 10px 20px;
+   position: relative;
+   top: 30vh;
+  
+   a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin: 2px 10px;
+    border-radius: 15%;
+    background: none; 
+    padding: 1px;
+    animation: myani;
+    display: block;
+ 
+    // &:hover{
+    //  // color: black;
+    //  // background: white;
+    // }
+   }
+ 
+   a:first-child{ 
     animation: myanileft;
-    animation-fill-mode: forwards;
-    animation-duration: 3s;
+    position: relative;
+    left: -1000px;
     animation-delay: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+   }
   }
-
-  &:last-child{
-    right: 2000px;
-    animation: myaniright;
-    animation-fill-mode: forwards;
-    animation-delay: 3s;
-    animation-duration: 3s;
-    
+ 
+ 
+ 
+  //media query for index.html 
+   #links a{
+    border: 1px solid yellow;
+    display: inline;
+    background-color: gold;
+    padding: 4px;
+    position: relative;
+    top: 60vh;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 5px 20px;
+    border-radius: 10%;
+ 
+    &:hover{
+      color: white;
+     }
+ 
+    &:first-child{
+      left: -2000px;
+      animation: myanileft;
+      animation-fill-mode: forwards;
+      animation-duration: 3s;
+      animation-delay: 3s;
+    }
+ 
+    &:last-child{
+      right: 2000px;
+      animation: myaniright;
+      animation-fill-mode: forwards;
+      animation-delay: 3s;
+      animation-duration: 3s;   
+    }
   }
 }
-
-}
+ 
+ 
+ 
+ 

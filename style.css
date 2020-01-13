@@ -326,4 +326,87 @@ body {
             animation-duration: 3s;
   }
 }
+
+@media (max-width: 300px) {
+  #brand p {
+    font-size: 1.5rem;
+    color: #0af8e4;
+    font-family: serif;
+  }
+  #brand p::first-letter {
+    color: white;
+    padding-right: 2px;
+    font-family: cursive;
+    font-weight: bolder;
+  }
+  #menu {
+    text-align: center;
+    margin: 10px 20px;
+    position: relative;
+    top: 30vh;
+  }
+  #menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    margin: 2px 10px;
+    border-radius: 15%;
+    background: none;
+    padding: 1px;
+    -webkit-animation: myani;
+            animation: myani;
+    display: block;
+  }
+  #menu a:first-child {
+    -webkit-animation: myanileft;
+            animation: myanileft;
+    position: relative;
+    left: -1000px;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+  }
+  #links a {
+    border: 1px solid yellow;
+    display: inline;
+    background-color: gold;
+    padding: 4px;
+    position: relative;
+    top: 60vh;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 5px 20px;
+    border-radius: 10%;
+  }
+  #links a:hover {
+    color: white;
+  }
+  #links a:first-child {
+    left: -2000px;
+    -webkit-animation: myanileft;
+            animation: myanileft;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+  }
+  #links a:last-child {
+    right: 2000px;
+    -webkit-animation: myaniright;
+            animation: myaniright;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-delay: 3s;
+            animation-delay: 3s;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+  }
+}
 /*# sourceMappingURL=style.css.map */

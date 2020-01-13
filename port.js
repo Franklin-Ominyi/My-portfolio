@@ -85,15 +85,15 @@ pix[1] = "apple-desk-imac-39284.jpg";
 pix[2] = "computer class.jpg";
 
 const imgSlider=()=>{
-document.querySelector("#sliders").src = pix[i];
-if(i<pix.length-1){
- i++
-}else{
- i = 0;
-}
+ document.querySelector("#sliders").src = pix[i];
+ if(i<pix.length-1){
+  i++
+ }else{
+  i = 0;
+ }
 
 
-setTimeout("imgSlider()", time);
+ setTimeout("imgSlider()", time);
 }
 window.onload = imgSlider;
 
