@@ -1,0 +1,224 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body{
+ background: rgb(207, 255, 211);
+ // margin-bottom: 40px;
+}
+
+.navbar{
+ position: fixed;
+ width: 100%;
+ z-index: 4;
+ background: black;
+ padding: 0;
+ // margin: 0;
+ transition: top 0.5s;
+
+ 
+ span{
+  float: left;
+  color: white;
+  margin-left: 8px;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: buxton sketch, Arial, Helvetica, sans-serif !important;
+  
+  a{
+   color: white;
+   text-decoration: none;
+   &:hover{
+    color: green;
+   }
+  }
+ }
+
+ ul{
+  float: right;
+  margin-right: 30px;
+  margin-top: 6px;
+  a{
+   text-decoration: none;
+   font-size: 16px;
+   color: white;
+   padding: 2px 6px;
+   
+   &:hover{
+    color: blue;
+   }
+  }
+ } 
+}
+
+#content{
+ position: relative;
+ top: 56px;
+ h3{
+  font-family: lcd, cursive;
+  padding: 0 10px;
+  margin-left: 10px;
+  text-align: center;
+  color: rgb(77, 108, 248);
+ }
+
+ .showcase{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: rgb(255, 0, 221);
+
+  // positioning the Good In and its content
+  h4, ul{
+   margin-left: 45px;
+  }
+ }
+}
+
+#img img{
+ // position: relative;
+ margin-top: 10px;
+ height: 500px;
+ width:500px;
+ border-radius: 50%;
+ overflow: hidden;
+
+ &:hover{
+  cursor: pointer;
+  transform: rotate(-360deg);
+  transition: transform 0.3s ease-in-out;
+ }
+}
+
+#portfolio{
+ margin-top: 100px;
+ background-color: rgb(10, 10, 10);
+ padding: 4px 20px;
+ 
+ .col-md-4 a{
+  margin: 5px 0;
+ }
+
+ div{
+  text-align: center;
+  img{
+   border:  1px solid yellow;
+   height: 260px;
+   width: 100%;
+  }
+  a{
+   text-decoration: none;
+   font-family: fantasy;
+   color: yellow;
+   &:hover{
+    color: green;
+   }
+   
+  }
+ }
+}
+
+
+#section3{
+ .col-md-3{
+  // margin-right: 15px;
+  margin-bottom: 35px; 
+ }
+ margin-top: 100px;
+ text-align: center;
+ 
+ h2{
+  text-align: center;
+  color: blue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: underline;
+  text-transform: capitalize;
+ }
+ 
+
+ .img{
+  border-radius: 7px 14px 7px 14px;
+  width: 200px;
+  box-shadow: 2px 7px 9px 4px blue;
+  margin-bottom: 5px;
+ }
+
+ span{
+  color: red;
+  font-weight: bold;
+  border: 1px solid rgb(221, 169, 221);
+  background: rgb(221, 169, 221) ;
+  padding: 3px;
+  border-radius: 2px;
+  &:hover{
+   background: white;
+   color: blue;
+  }
+
+  cursor: pointer;
+  transition: all 0.6s ease-in;
+ }
+
+}
+
+#contact{
+ margin-bottom: 50px;
+ a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  border: 2px solid orange;
+  padding: 4px;
+  &:hover{
+   background: blue;
+   border-radius: 20%;
+   border: none;
+   color: white;
+  }
+
+  transition: all 0.5s ease;
+ }
+}
+
+
+@media (max-width: 768px){
+ #img img{
+  width: 100%;
+  height: 350px;
+ }
+
+ //media queries for the section3
+ #section3{
+  margin-top: 100px;
+  text-align: center;
+ 
+  .col-md-3{
+   // margin-right: 15px;
+   margin-bottom: 35px;
+ 
+  }
+
+  h2{
+   text-align: center;
+   color: blue;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   text-decoration: underline;
+   text-transform: capitalize;
+   font-size: 16px;
+  }
+  
+
+  .img{
+   border-radius: 7px 14px 7px 14px;
+   width: 100%;
+   height: 300px;
+   box-shadow: 2px 7px 9px 4px blue;
+  }
+ }
+ 
+ .navbar span{
+  font-size: 14px;
+ }
+}
