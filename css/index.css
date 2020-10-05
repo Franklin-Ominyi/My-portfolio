@@ -278,5 +278,8 @@ body {
     color: white;
     background: blue;
   }
+  #contact a {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
