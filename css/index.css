@@ -282,4 +282,8 @@ body {
     font-size: 14px;
   }
 }
+
+.social-icons a {
+  margin: 0 4px;
+}
 /*# sourceMappingURL=index.css.map */
