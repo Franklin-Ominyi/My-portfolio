@@ -285,5 +285,11 @@ body {
 
 .social-icons a {
   margin: 0 4px;
+  font-size: 10px;
+  color: #ff660e;
+}
+
+.social-icons a i {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=index.css.map */
