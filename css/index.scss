@@ -62,6 +62,19 @@ body{
 
 }
 
+.social-icons{
+ a{
+  margin: 0 4px;
+  font-size: 10px;
+  color: rgb(255, 102, 14);
+ 
+  i{
+   margin-bottom: 20px;
+  }
+ }
+}
+
+
 #content{
  position: relative;
  top: 56px;
@@ -189,6 +202,20 @@ body{
 }
 
 @media (max-width: 768px){
+ //media queries for social icons 
+ .social-icons{
+  a{
+   margin: 0 2px;
+   font-size: 8px;
+   color: rgb(255, 102, 14);
+  
+   i{
+    margin-bottom: 20px;
+   }
+  }
+ }
+
+
  //media queries for my photo
  #img img{
   width: 100%;
@@ -304,18 +331,9 @@ body{
  #contact a {
   font-size: 14px;
  }
+
+ 
  
 }
 
-.social-icons{
- a{
-  margin: 0 4px;
-  font-size: 10px;
-  color: rgb(255, 102, 14);
- 
-  i{
-   margin-bottom: 20px;
-  }
- }
-}
 

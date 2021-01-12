@@ -60,6 +60,16 @@ body {
   background: blue;
 }
 
+.social-icons a {
+  margin: 0 4px;
+  font-size: 10px;
+  color: #ff660e;
+}
+
+.social-icons a i {
+  margin-bottom: 20px;
+}
+
 #content {
   position: relative;
   top: 56px;
@@ -195,6 +205,14 @@ body {
 }
 
 @media (max-width: 768px) {
+  .social-icons a {
+    margin: 0 2px;
+    font-size: 8px;
+    color: #ff660e;
+  }
+  .social-icons a i {
+    margin-bottom: 20px;
+  }
   #img img {
     width: 100%;
     height: 350px;
@@ -281,15 +299,5 @@ body {
   #contact a {
     font-size: 14px;
   }
-}
-
-.social-icons a {
-  margin: 0 4px;
-  font-size: 10px;
-  color: #ff660e;
-}
-
-.social-icons a i {
-  margin-bottom: 20px;
 }
 /*# sourceMappingURL=index.css.map */
